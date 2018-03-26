@@ -16,7 +16,9 @@ public class SingController {
 	
 	@RequestMapping(value="/",method=RequestMethod.GET)
 	public String index(Model model) {
-		model.addAttribute("categories", service.getCurrentChoice());
+		Object obj =  service.getCurrentChoice();
+		model.addAttribute("categories",obj);
+		model.addAttribute("test", 1);
 		return "index";
 	}
 	
