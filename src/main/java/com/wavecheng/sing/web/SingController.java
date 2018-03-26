@@ -66,6 +66,12 @@ public class SingController {
 		service.updateCategory(id,name,date,active,maxCount);
 		return "user/category";
 	}
+
+	@RequestMapping(value="user/category/{categoryId}/attendee/{id}/delete",method=RequestMethod.GET)
+	public String deleteAttendee(@PathVariable("categoryId") int categoryId,  @PathVariable("id") int id ) {
+		service.deleteAttendee(id);
+		return "redirect:/user/category/"+ categoryId+ "/view_attendee";
+	}
 	
 	@RequestMapping(value="user/login",method=RequestMethod.GET)
 	public String login() {

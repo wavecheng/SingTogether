@@ -85,4 +85,8 @@ public class CategoryServiceImpl {
 	public List<Attendee> getAttendeesByCategory(int id){
 		return attendeRepository.findByCategory(categoryRepository.findOne(id));
 	}
+
+	public void deleteAttendee(int id) {
+		attendeRepository.delete(id);
+	}
 }

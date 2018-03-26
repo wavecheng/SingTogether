@@ -23,7 +23,7 @@
 		      <td th:text="${o.phone}">0.99</td>
 		      <td th:text="${o.registerTime}">0.99</td>
 		      <td>
-		      <a th:href="@{/user/attendee/{id}/delete(id=${o.id})}">Delete</a>
+		      <a th:href="@{/user/category/{catId}/attendee/{id}/delete(catId=${category.id},id=${o.id})}">Delete</a>
 		      </td>
 		    </tr>
 		  </tbody>
