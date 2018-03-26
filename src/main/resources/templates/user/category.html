@@ -22,7 +22,7 @@
 		      <td><a th:href="@{/user/category/{id}/view(id=${o.id})}" th:text="${o.name}"></a></td>
 		      <td th:text="${o.beginTime}">0.99</td>
 		      <td>
-		      <a th:href="@{/user/category/{id}/update(id=${o.id})}">Update</a>
+		      <a th:href="@{/user/category/{id}/view(id=${o.id})}">Update</a>
 		      <a th:href="@{/user/category/{id}/delete(id=${o.id})}">Delete</a>
 		      <a th:href="@{/user/category/{id}/view_attendee(id=${o.id})}">Attendees</a>
 		      </td>

@@ -28,24 +28,37 @@ public class CategoryServiceImpl {
 	@Autowired
 	private AttendeRepository attendeRepository;
 	
-	DateFormat df = new SimpleDateFormat("yyyy-mm-dd");
+	DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 	
-	private int getAvailableCount(Category category) {
+	private long getAvailableCount(Category category) {
 		List<Attendee> attendees =  attendeRepository.findByCategory(category);
-		log.debug("searching categoryId={},name={}, startTme={}, maxCount={},attendess count={}", category.getId(),category.getName(),
-				category.getBeginTime(),category.getMaxCount(),attendees.size());
-		return category.getMaxCount() - attendees.size();
+		
+		//filter after registered
+		long count = attendees.stream().filter( t -> t.getRegisterTime().after(category.getBeginTime())).count();
+		log.debug("searching categoryId={},name={}, startTme={}, maxCount={},attendess count={}",
+				 category.getId(),category.getName(),
+				category.getBeginTime(),category.getMaxCount(),count);
+		return category.getMaxCount() - count ;
 	}
 	
 	public List<CategoryBO> getCurrentChoice(){
 		List<Category> activeCategory = categoryRepository.findByActive(true);
 		List<CategoryBO> boList = new ArrayList<CategoryBO>();
 		for(Category c: activeCategory) {
+			
+			//not begin, skip
+			log.info("{} checking beginTime:{}, current time:{}" , c.getName(), c.getBeginTime().getTime(),
+					  System.currentTimeMillis());
+			if((System.currentTimeMillis() - c.getBeginTime().getTime()) < 0) {
+				
+					continue;
+			}
+			
 			CategoryBO cb = new CategoryBO();
 			cb.setId(c.getId());
 			cb.setMaxCount(c.getMaxCount());
 			cb.setName(c.getName());
-			cb.setAvailableCount(getAvailableCount(c));
+			cb.setAvailableCount((int)getAvailableCount(c));
 			boList.add(cb);
 		}
 		return boList;
