@@ -1,5 +1,8 @@
 package com.wavecheng.sing.entity;
 
+import java.sql.Timestamp;
+import java.util.Calendar;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -15,7 +18,16 @@ public class Attendee {
 	private int id;
 	private String name;
 	private String phone;
-	
+	private Timestamp registerTime = Timestamp.from(Calendar.getInstance().toInstant());
+		
+	public Timestamp getRegisterTime() {
+		return registerTime;
+	}
+
+	public void setRegisterTime(Timestamp registerTime) {
+		this.registerTime = registerTime;
+	}
+
 	@ManyToOne
 	@JoinColumn(name="categoryId")
 	private Category category;

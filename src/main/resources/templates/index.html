@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
     <head>
-        <title>Hello Spring222222 Security</title>
+        <title>学唱团报名</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="/css/main.css" th:href="@{/css/main.css}" />
     </head>
     <body>
-        <h1>Hello Spring Security</h1>
-        <p>This is an unsecured page, but you can access the secured pages after authenticating.</p>
-        <span th:text="${test}" ></span>      
-        <form action="" th:action="@{/index}" method="POST">	
-        	<input type="text" name="name" value="" />
-        	<input type="text" name="phone" value="a1111" />
-        	
-        	<input th:each="a : ${categories}" type="radio" name="answer" th:text="${a.name  + '(' + a.availableCount + ')' }" th:value="${a.id}"></input>
-        		
+        <h1>学唱团报名</h1>
+        <p>感谢您能抽出几分钟时间来填写以下内容，现在我们就马上开始吧！</p>  
+        <form action="" th:action="@{/}" method="POST">	
+        	姓名:<input type="text" name="name" value="aaaa" />
+        	手机号码:<input type="text" name="phone" value="1234567" />       	
+        	单选题<input th:each="a : ${categories}" type="radio" name="category" 
+        		th:text="${a.name  + '(' + a.availableCount + ')' }" th:value="${a.id}"
+        		></input>      		
             <input type="submit" value="Submit" />
         </form>
         

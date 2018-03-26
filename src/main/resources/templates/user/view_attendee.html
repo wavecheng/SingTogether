@@ -11,19 +11,19 @@
 		    <tr>
 		      <th>Id</th>
 		      <th>Name</th>
-		      <th>StartTime</th>
+		      <th>Phone</th>
+		      <th>RegisterTime</th>
 		      <th></th>
 		    </tr>
 		  </thead>
 		  <tbody>
-		    <tr th:each="o: ${allCategories}">
+		    <tr th:each="o : ${attendees}">
 		      <td th:text="${o.id}">Oranges</td>
-		      <td><a th:href="@{/user/category/{id}/view(id=${o.id})}" th:text="${o.name}"></a></td>
-		      <td th:text="${o.beginTime}">0.99</td>
+		      <td th:text="${o.name}">0.99</td>
+		      <td th:text="${o.phone}">0.99</td>
+		      <td th:text="${o.registerTime}">0.99</td>
 		      <td>
-		      <a th:href="@{/user/category/{id}/update(id=${o.id})}">Update</a>
-		      <a th:href="@{/user/category/{id}/delete(id=${o.id})}">Delete</a>
-		      <a th:href="@{/user/category/{id}/view_attendee(id=${o.id})}">Attendees</a>
+		      <a th:href="@{/user/attendee/{id}/delete(id=${o.id})}">Delete</a>
 		      </td>
 		    </tr>
 		  </tbody>

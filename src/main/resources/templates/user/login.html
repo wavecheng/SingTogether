@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>学唱团报名Admin</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/css/main.css" th:href="@{/css/main.css}" />
+    </head>
+    <body>  
+        <div th:fragment="logout" class="logout" sec:authorize="isAuthenticated()">		
+            Logged in user: <span sec:authentication="name"></span> 
+            <div>
+                <form action="#" th:action="@{/logout}" method="post">					
+                    <input type="submit" value="Logout" />
+                </form>              
+            </div>
+        </div>     
+    </body>
+</html>

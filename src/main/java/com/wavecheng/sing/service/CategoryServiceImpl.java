@@ -1,5 +1,9 @@
 package com.wavecheng.sing.service;
 
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,12 +49,17 @@ public class CategoryServiceImpl {
 		return boList;
 	}
 	
-	public synchronized boolean addAttendee(Attendee attendee){
-		if(getAvailableCount(attendee.getCategory()) <= 0) {
-			String msg = "额满，谢谢！";
-			log.error(" {} is done! Failed to register: {}, {} ", attendee.getCategory().getName(), attendee.getName(), attendee.getPhone());
-			throw new RuntimeException(msg);
+	public synchronized boolean addAttendee(String name,String phone, int categoryId){
+		Category category = categoryRepository.findOne(categoryId);		
+		if(getAvailableCount(category) <= 0) {			
+			log.error(" {} is done! Failed to register: {}, {} ", category.getName(), name, phone);
+			throw new RuntimeException(name + ":"+ phone + " failed to register:" + category.getName());
 		}	
+		
+		Attendee attendee = new Attendee();
+		attendee.setCategory(category);
+		attendee.setName(name);
+		attendee.setPhone(phone);
 		attendeRepository.save(attendee);
 		return true;
 	}
@@ -59,9 +68,21 @@ public class CategoryServiceImpl {
 		return (List<Category>) categoryRepository.findAll();
 	}
 	
-	public void updateCategory(Category category) {
-		categoryRepository.save(category);
+	public void updateCategory(int id, String name, String beginDate, boolean active, int maxCount) throws ParseException {
+		Category cat = categoryRepository.findOne(id);
+		cat.setName(name);
+		DateFormat df = new SimpleDateFormat("yyyy-mm-dd");
+		cat.setBeginTime(Timestamp.from(df.parse(beginDate).toInstant()));
+		cat.setMaxCount(maxCount);
+		cat.setActive(active);
+		categoryRepository.save(cat);
 	}
 	
+	public Category getCategory(int id) {
+		return categoryRepository.findOne(id);
+	}
 	
+	public List<Attendee> getAttendeesByCategory(int id){
+		return attendeRepository.findByCategory(categoryRepository.findOne(id));
+	}
 }
