@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>学唱团报名Admin - Update Category</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/css/main.css" th:href="@{/css/main.css}" />
+    </head>
+    <body>  
+	<form th:action="@{/user/category/{id}/update(id=${cat.id})}" method="POST">
+		Name:<input type="text" name="name" th:value="${cat.name}" required="required" />
+		Begin Time:<input type="date" name="date" th:value="${#strings.substring(cat.beginTime,0,10)}" required="required" />
+		Max Count:<input type="number" name="maxCount" th:value="${cat.maxCount}" required="required"/>
+		Enabled:<input type="radio" name="active" value="1" checked="checked"/> active
+		<input type="radio" name="active" value="0" /> Inactive
+		<input type="submit" value="Submit" />
+		<input type="hidden"  th:name="${_csrf.parameterName}"  th:value="${_csrf.token}" />
+		<input type="hidden" name="id" th:value="${cat.id}" />
+	</form>
+    </body>
+</html>

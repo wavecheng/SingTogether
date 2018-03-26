@@ -54,17 +54,35 @@ public class SingController {
 		return "user/view_attendee";
 	}
 
+	@RequestMapping(value="user/category/add",method=RequestMethod.GET)
+	public String addCategory() {	
+		return "user/category_add";
+	}
+
+	@RequestMapping(value="user/category/add",method=RequestMethod.POST)
+	public String addCategory(@RequestParam String name, @RequestParam String date,
+			@RequestParam boolean active, @RequestParam int maxCount) throws ParseException {
+		service.addCategory(name,date,active,maxCount);
+		return "redirect:/user/category";
+	}
+
+	@RequestMapping(value="user/category/{id}/delete",method=RequestMethod.GET)
+	public String deleteCategory(@PathVariable int id) throws ParseException {
+		service.deleteCategory(id);
+		return "redirect:/user/category";
+	}
+	
 	@RequestMapping(value="user/category/{id}/view",method=RequestMethod.GET)
 	public String viewCategory(@PathVariable int id,Model model) {
-		model.addAttribute("category", service.getCategory(id));
-		return "user/category";
+		model.addAttribute("cat", service.getCategory(id));
+		return "user/category_view";
 	}
 	
 	@RequestMapping(value="user/category/{id}/update",method=RequestMethod.POST)
-	public String viewAttendee(@RequestParam int id, @RequestBody String name, @RequestParam String date,
+	public String viewAttendee(@RequestParam int id, @RequestParam String name, @RequestParam String date,
 			@RequestParam boolean active, @RequestParam int maxCount) throws ParseException {
 		service.updateCategory(id,name,date,active,maxCount);
-		return "user/category";
+		return "redirect:/user/category";
 	}
 
 	@RequestMapping(value="user/category/{categoryId}/attendee/{id}/delete",method=RequestMethod.GET)

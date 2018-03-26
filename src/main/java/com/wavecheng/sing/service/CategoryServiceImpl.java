@@ -28,6 +28,8 @@ public class CategoryServiceImpl {
 	@Autowired
 	private AttendeRepository attendeRepository;
 	
+	DateFormat df = new SimpleDateFormat("yyyy-mm-dd");
+	
 	private int getAvailableCount(Category category) {
 		List<Attendee> attendees =  attendeRepository.findByCategory(category);
 		log.debug("searching categoryId={},name={}, startTme={}, maxCount={},attendess count={}", category.getId(),category.getName(),
@@ -71,7 +73,7 @@ public class CategoryServiceImpl {
 	public void updateCategory(int id, String name, String beginDate, boolean active, int maxCount) throws ParseException {
 		Category cat = categoryRepository.findOne(id);
 		cat.setName(name);
-		DateFormat df = new SimpleDateFormat("yyyy-mm-dd");
+		
 		cat.setBeginTime(Timestamp.from(df.parse(beginDate).toInstant()));
 		cat.setMaxCount(maxCount);
 		cat.setActive(active);
@@ -88,5 +90,18 @@ public class CategoryServiceImpl {
 
 	public void deleteAttendee(int id) {
 		attendeRepository.delete(id);
+	}
+
+	public void addCategory(String name, String beginDate, boolean active, int maxCount) throws ParseException {
+		Category c = new Category();
+		c.setActive(active);
+		c.setBeginTime(Timestamp.from(df.parse(beginDate).toInstant()));
+		c.setMaxCount(maxCount);
+		c.setName(name);	
+		categoryRepository.save(c);
+	}
+
+	public void deleteCategory(int id) {
+		categoryRepository.delete(id);
 	}
 }
