@@ -13,17 +13,17 @@
         	<input type="text" name="name" value="" />
         	<input type="text" name="phone" value="a1111" />
         	
-        	<input th:each="a,iterStatus : ${categories}" type="radio" name="answer" th:text="${a.id}" th:value="${iterStatus.index}"></input>
+        	<input th:each="a : ${categories}" type="radio" name="answer" th:text="${a.name  + '(' + a.availableCount + ')' }" th:value="${a.id}"></input>
         		
             <input type="submit" value="Submit" />
         </form>
         
-         <table> 
-  <tr th:each="var : ${#vars}">
-    <td th:text="${var.key}"></td>
-    <td th:text="${var.value}"></td>
-</tr>
-</table>
+<!-- <table>  -->
+<!--   <tr th:each="var : ${#vars}"> -->
+<!--     <td th:text="${var.key}"></td> -->
+<!--     <td th:text="${var.value}"></td> -->
+<!-- </tr> -->
+<!-- </table> -->
 
     </body>
 </html>
