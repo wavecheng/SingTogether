@@ -6,6 +6,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -49,8 +50,7 @@ public class CategoryServiceImpl {
 			//not begin, skip
 			log.info("{} checking beginTime:{}, current time:{}" , c.getName(), c.getBeginTime().getTime(),
 					  System.currentTimeMillis());
-			if((System.currentTimeMillis() - c.getBeginTime().getTime()) < 0) {
-				
+			if((System.currentTimeMillis() - c.getBeginTime().getTime()) < 0) {				
 					continue;
 			}
 			
@@ -98,7 +98,9 @@ public class CategoryServiceImpl {
 	}
 	
 	public List<Attendee> getAttendeesByCategory(int id){
-		return attendeRepository.findByCategory(categoryRepository.findOne(id));
+		List<Attendee> userList = attendeRepository.findByCategory(categoryRepository.findOne(id));
+		return userList.stream().filter( t -> t.getRegisterTime().after(t.getCategory().getBeginTime()))
+				.collect(Collectors.toList());
 	}
 
 	public void deleteAttendee(int id) {

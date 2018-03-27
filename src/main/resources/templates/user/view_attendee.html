@@ -10,6 +10,7 @@
     </head>
     <body> 
     	<div class="container-fluid"> 
+    	<a href="/user/category">Category</a> | <a href="/"> Home</a>
     	<h2 th:text="${category.name}"></h2>
     	<p class="well" th:text="${'开始时间:[' + category.beginTime + '],最大人数:[' + category.maxCount + ']'}">
 			
@@ -18,6 +19,7 @@
 		  <thead>
 		    <tr>
 		      <th>Id</th>
+		      <th>序号</th>
 		      <th>姓名</th>
 		      <th>电话</th>
 		      <th>注册时间</th>
@@ -25,8 +27,9 @@
 		    </tr>
 		  </thead>
 		  <tbody>
-		    <tr th:each="o : ${attendees}">
+		    <tr th:each="o ,iter: ${attendees}">
 		      <td th:text="${o.id}">Oranges</td>
+		      <td th:text="${iter.index+1}"></td>
 		      <td th:text="${o.name}">0.99</td>
 		      <td th:text="${o.phone}">0.99</td>
 		      <td th:text="${o.registerTime}">0.99</td>
