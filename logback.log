@@ -2670,3 +2670,620 @@ org.thymeleaf.exceptions.ConfigurationException: Cannot perform conversion to XM
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Unknown Source)
+22:32:53.667 logback [main] INFO  com.wavecheng.sing.SingApplication - Starting SingApplication on W2K12R2-0SAI9E6 with PID 7088 (C:\Users\Administrator\Documents\h24_web_dev_wkspace\SingTogether\target\classes started by Administrator in C:\Users\Administrator\Documents\h24_web_dev_wkspace\SingTogether)
+22:32:53.667 logback [main] DEBUG com.wavecheng.sing.SingApplication - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+22:32:53.667 logback [main] INFO  com.wavecheng.sing.SingApplication - No active profile set, falling back to default profiles: default
+22:32:54.230 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@635ba0: startup date [Tue Mar 27 22:32:54 SGT 2018]; root of context hierarchy
+22:32:54.308 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+22:32:56.468 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1a09c237] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:57.508 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+22:32:57.633 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:32:57.649 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+22:32:57.992 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:32:57.992 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3762 ms
+22:32:58.414 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+22:32:58.414 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+22:32:58.414 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+22:32:58.414 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+22:32:58.414 logback [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+22:32:58.414 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+22:32:59.570 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+22:32:59.601 logback [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+22:32:59.773 logback [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+22:32:59.773 logback [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+22:32:59.773 logback [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+22:32:59.867 logback [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+22:33:00.179 logback [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+22:33:01.257 logback [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+22:33:01.902 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:33:03.370 logback [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1853c7e, org.springframework.security.web.context.SecurityContextPersistenceFilter@16c2be6, org.springframework.security.web.header.HeaderWriterFilter@1a6b13d, org.springframework.security.web.csrf.CsrfFilter@1218c74, org.springframework.security.web.authentication.logout.LogoutFilter@ee2e10, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1eabd6b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d0ece6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ead7e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e5af53, org.springframework.security.web.session.SessionManagementFilter@551e97, org.springframework.security.web.access.ExceptionTranslationFilter@19ee36b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12dacf5]
+22:33:03.948 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@635ba0: startup date [Tue Mar 27 22:32:54 SGT 2018]; root of context hierarchy
+22:33:04.125 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[POST]}" onto public java.lang.String com.wavecheng.sing.web.SingController.index(java.lang.String,java.lang.String,int)
+22:33:04.127 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.index(org.springframework.ui.Model)
+22:33:04.128 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.adminCategory(org.springframework.ui.Model)
+22:33:04.128 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{id}/update],methods=[POST]}" onto public java.lang.String com.wavecheng.sing.web.SingController.viewAttendee(int,java.lang.String,java.lang.String,boolean,int) throws java.text.ParseException
+22:33:04.129 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{id}/view_attendee],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.viewAttendee(int,org.springframework.ui.Model)
+22:33:04.129 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{categoryId}/attendee/{id}/delete],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.deleteAttendee(int,int)
+22:33:04.130 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{id}/view],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.viewCategory(int,org.springframework.ui.Model)
+22:33:04.130 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/add],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.addCategory()
+22:33:04.130 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/add],methods=[POST]}" onto public java.lang.String com.wavecheng.sing.web.SingController.addCategory(java.lang.String,java.lang.String,boolean,int) throws java.text.ParseException
+22:33:04.131 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{id}/delete],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.deleteCategory(int) throws java.text.ParseException
+22:33:04.131 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.login()
+22:33:04.137 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+22:33:04.138 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+22:33:04.220 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:33:04.222 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:33:04.308 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:33:05.560 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+22:33:05.594 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+22:33:05.622 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+22:33:05.645 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+22:33:05.684 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+22:33:05.694 logback [main] INFO  com.wavecheng.sing.SingApplication - Started SingApplication in 12.891 seconds (JVM running for 13.754)
+22:33:05.947 logback [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+22:33:05.948 logback [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+22:33:06.002 logback [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 54 ms
+22:33:06.166 logback [http-nio-80-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+22:33:06.552 logback [http-nio-80-exec-1] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522161186552
+22:33:06.590 logback [http-nio-80-exec-1] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:33:06.591 logback [http-nio-80-exec-1] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522161186591
+22:33:06.594 logback [http-nio-80-exec-1] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:33:06.595 logback [http-nio-80-exec-1] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522161186595
+22:33:06.596 logback [http-nio-80-exec-1] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:33:06.636 logback [http-nio-80-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+22:33:06.736 logback [http-nio-80-exec-1] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+22:33:06.737 logback [http-nio-80-exec-1] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+22:33:06.737 logback [http-nio-80-exec-1] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+22:33:06.737 logback [http-nio-80-exec-1] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+22:33:06.746 logback [http-nio-80-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+22:33:06.747 logback [http-nio-80-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+22:33:06.867 logback [http-nio-80-exec-1] ERROR o.t.templateparser.ErrorHandler - [THYMELEAF][http-nio-80-exec-1] Fatal error during parsing
+org.xml.sax.SAXParseException: The element type "body" must be terminated by the matching end-tag "</body>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(Unknown Source)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.doParse(AbstractNonValidatingSAXTemplateParser.java:209)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplateUsingPool(AbstractNonValidatingSAXTemplateParser.java:134)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplate(AbstractNonValidatingSAXTemplateParser.java:116)
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:278)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+22:33:06.871 logback [http-nio-80-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-80-exec-1] Exception processing template "index": Exception parsing document: template="index", line 65 - column 11
+22:33:06.877 logback [http-nio-80-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 65 - column 11] with root cause
+org.xml.sax.SAXParseException: The element type "body" must be terminated by the matching end-tag "</body>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(Unknown Source)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.doParse(AbstractNonValidatingSAXTemplateParser.java:209)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplateUsingPool(AbstractNonValidatingSAXTemplateParser.java:134)
+	at org.thymeleaf.templateparser.xmlsax.AbstractNonValidatingSAXTemplateParser.parseTemplate(AbstractNonValidatingSAXTemplateParser.java:116)
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:278)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+22:33:52.030 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522161232030
+22:33:52.033 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:33:52.034 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522161232034
+22:33:52.036 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:33:52.036 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522161232036
+22:33:52.039 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:34:45.390 logback [http-nio-80-exec-10] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522161285390
+22:34:45.393 logback [http-nio-80-exec-10] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:34:45.393 logback [http-nio-80-exec-10] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522161285393
+22:34:45.395 logback [http-nio-80-exec-10] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:34:45.395 logback [http-nio-80-exec-10] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522161285395
+22:34:45.398 logback [http-nio-80-exec-10] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:35:07.684 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522161307684
+22:35:07.689 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:35:07.690 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522161307690
+22:35:07.700 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:35:07.701 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522161307701
+22:35:07.708 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:35:56.577 logback [http-nio-80-exec-2] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522161356577
+22:35:56.580 logback [http-nio-80-exec-2] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:35:56.581 logback [http-nio-80-exec-2] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522161356581
+22:35:56.584 logback [http-nio-80-exec-2] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:35:56.584 logback [http-nio-80-exec-2] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522161356584
+22:35:56.587 logback [http-nio-80-exec-2] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:36:29.828 logback [http-nio-80-exec-7] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522161389828
+22:36:29.833 logback [http-nio-80-exec-7] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:36:29.833 logback [http-nio-80-exec-7] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522161389833
+22:36:29.836 logback [http-nio-80-exec-7] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:36:29.836 logback [http-nio-80-exec-7] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522161389836
+22:36:29.838 logback [http-nio-80-exec-7] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:36:51.563 logback [http-nio-80-exec-3] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522161411563
+22:36:51.567 logback [http-nio-80-exec-3] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:36:51.567 logback [http-nio-80-exec-3] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522161411567
+22:36:51.570 logback [http-nio-80-exec-3] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:36:51.571 logback [http-nio-80-exec-3] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522161411571
+22:36:51.574 logback [http-nio-80-exec-3] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:37:04.171 logback [http-nio-80-exec-9] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522161424171
+22:37:04.177 logback [http-nio-80-exec-9] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:37:04.177 logback [http-nio-80-exec-9] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522161424177
+22:37:04.179 logback [http-nio-80-exec-9] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:37:04.179 logback [http-nio-80-exec-9] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522161424179
+22:37:04.181 logback [http-nio-80-exec-9] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:37:41.809 logback [http-nio-80-exec-4] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522161461809
+22:37:41.813 logback [http-nio-80-exec-4] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:37:41.813 logback [http-nio-80-exec-4] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522161461813
+22:37:41.816 logback [http-nio-80-exec-4] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:37:41.816 logback [http-nio-80-exec-4] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522161461816
+22:37:41.819 logback [http-nio-80-exec-4] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:38:20.660 logback [http-nio-80-exec-10] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522161500660
+22:38:20.663 logback [http-nio-80-exec-10] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:38:20.663 logback [http-nio-80-exec-10] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522161500663
+22:38:20.665 logback [http-nio-80-exec-10] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:38:20.665 logback [http-nio-80-exec-10] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522161500665
+22:38:20.666 logback [http-nio-80-exec-10] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:38:51.748 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522161531748
+22:38:51.767 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:38:51.767 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522161531767
+22:38:51.767 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:38:51.767 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522161531767
+22:38:51.767 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:39:23.697 logback [http-nio-80-exec-6] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522161563697
+22:39:23.702 logback [http-nio-80-exec-6] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:39:23.702 logback [http-nio-80-exec-6] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522161563702
+22:39:23.706 logback [http-nio-80-exec-6] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:39:23.706 logback [http-nio-80-exec-6] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522161563706
+22:39:23.709 logback [http-nio-80-exec-6] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:41:00.074 logback [http-nio-80-exec-2] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522161660074
+22:41:00.078 logback [http-nio-80-exec-2] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:41:00.079 logback [http-nio-80-exec-2] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522161660079
+22:41:00.083 logback [http-nio-80-exec-2] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:41:00.083 logback [http-nio-80-exec-2] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522161660083
+22:41:00.086 logback [http-nio-80-exec-2] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:41:21.315 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522161681315
+22:41:21.318 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:41:21.318 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522161681318
+22:41:21.320 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:41:21.320 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522161681320
+22:41:21.322 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:42:00.894 logback [http-nio-80-exec-6] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522161720894
+22:42:00.897 logback [http-nio-80-exec-6] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:42:00.898 logback [http-nio-80-exec-6] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522161720898
+22:42:00.900 logback [http-nio-80-exec-6] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:42:00.901 logback [http-nio-80-exec-6] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522161720901
+22:42:00.903 logback [http-nio-80-exec-6] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:42:28.976 logback [http-nio-80-exec-8] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522161748976
+22:42:28.979 logback [http-nio-80-exec-8] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:42:28.979 logback [http-nio-80-exec-8] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522161748979
+22:42:28.982 logback [http-nio-80-exec-8] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:42:28.982 logback [http-nio-80-exec-8] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522161748982
+22:42:28.983 logback [http-nio-80-exec-8] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:49:22.010 logback [http-nio-80-exec-1] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522162162010
+22:49:22.013 logback [http-nio-80-exec-1] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:49:22.014 logback [http-nio-80-exec-1] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522162162014
+22:49:22.016 logback [http-nio-80-exec-1] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:49:22.017 logback [http-nio-80-exec-1] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522162162017
+22:49:22.019 logback [http-nio-80-exec-1] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:49:34.147 logback [http-nio-80-exec-6] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522162174147
+22:49:34.150 logback [http-nio-80-exec-6] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:49:34.151 logback [http-nio-80-exec-6] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522162174151
+22:49:34.154 logback [http-nio-80-exec-6] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:49:34.154 logback [http-nio-80-exec-6] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522162174154
+22:49:34.157 logback [http-nio-80-exec-6] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:49:34.189 logback [http-nio-80-exec-6] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-80-exec-6] Exception processing template "index": Exception evaluating SpringEL expression: "!a.availableCount" (index:50)
+22:49:34.192 logback [http-nio-80-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "!a.availableCount" (index:50)] with root cause
+org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.Integer] to type [java.lang.Boolean]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:324)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:206)
+	at org.springframework.expression.spel.support.StandardTypeConverter.convertValue(StandardTypeConverter.java:67)
+	at org.springframework.expression.common.ExpressionUtils.convertTypedValue(ExpressionUtils.java:53)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:171)
+	at org.springframework.expression.spel.ast.OperatorNot.getValueInternal(OperatorNot.java:47)
+	at org.springframework.expression.spel.ast.OperatorNot.getValueInternal(OperatorNot.java:36)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:121)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:324)
+	at org.thymeleaf.spring4.expression.SpelVariableExpressionEvaluator.evaluate(SpelVariableExpressionEvaluator.java:140)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariable(VariableExpression.java:154)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:59)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:103)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:133)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:120)
+	at org.thymeleaf.standard.processor.attr.AbstractStandardConditionalFixedValueAttrProcessor.isVisible(AbstractStandardConditionalFixedValueAttrProcessor.java:76)
+	at org.thymeleaf.processor.attr.AbstractConditionalFixedValueAttrProcessor.processAttribute(AbstractConditionalFixedValueAttrProcessor.java:57)
+	at org.thymeleaf.processor.attr.AbstractAttrProcessor.doProcess(AbstractAttrProcessor.java:87)
+	at org.thymeleaf.processor.AbstractProcessor.process(AbstractProcessor.java:212)
+	at org.thymeleaf.dom.Node.applyNextProcessor(Node.java:1017)
+	at org.thymeleaf.dom.Node.processNode(Node.java:972)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695)
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668)
+	at org.thymeleaf.dom.Node.processNode(Node.java:990)
+	at org.thymeleaf.dom.Document.process(Document.java:93)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1155)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+22:49:48.629 logback [http-nio-80-exec-1] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522162188629
+22:49:48.629 logback [http-nio-80-exec-1] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:49:48.629 logback [http-nio-80-exec-1] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522162188629
+22:49:48.641 logback [http-nio-80-exec-1] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:49:48.642 logback [http-nio-80-exec-1] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522162188642
+22:49:48.644 logback [http-nio-80-exec-1] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:50:30.025 logback [http-nio-80-exec-7] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522162230025
+22:50:30.025 logback [http-nio-80-exec-7] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:50:30.025 logback [http-nio-80-exec-7] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522162230025
+22:50:30.036 logback [http-nio-80-exec-7] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:50:30.037 logback [http-nio-80-exec-7] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522162230037
+22:50:30.039 logback [http-nio-80-exec-7] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:50:31.283 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522162231283
+22:50:31.283 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:50:31.283 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522162231283
+22:50:31.283 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:50:31.283 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522162231283
+22:50:31.294 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:50:31.707 logback [http-nio-80-exec-2] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522162231707
+22:50:31.707 logback [http-nio-80-exec-2] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:50:31.707 logback [http-nio-80-exec-2] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522162231707
+22:50:31.707 logback [http-nio-80-exec-2] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:50:31.707 logback [http-nio-80-exec-2] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522162231707
+22:50:31.718 logback [http-nio-80-exec-2] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:50:31.904 logback [http-nio-80-exec-4] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522162231904
+22:50:31.904 logback [http-nio-80-exec-4] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:50:31.904 logback [http-nio-80-exec-4] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522162231904
+22:50:31.904 logback [http-nio-80-exec-4] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:50:31.904 logback [http-nio-80-exec-4] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522162231904
+22:50:31.904 logback [http-nio-80-exec-4] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:50:32.073 logback [http-nio-80-exec-9] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522162232073
+22:50:32.073 logback [http-nio-80-exec-9] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:50:32.073 logback [http-nio-80-exec-9] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522162232073
+22:50:32.073 logback [http-nio-80-exec-9] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:50:32.073 logback [http-nio-80-exec-9] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522162232073
+22:50:32.073 logback [http-nio-80-exec-9] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:51:09.147 logback [http-nio-80-exec-4] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522162269147
+22:51:09.150 logback [http-nio-80-exec-4] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:51:09.150 logback [http-nio-80-exec-4] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522162269150
+22:51:09.152 logback [http-nio-80-exec-4] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:51:09.152 logback [http-nio-80-exec-4] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522162269152
+22:51:09.154 logback [http-nio-80-exec-4] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:51:23.155 logback [http-nio-80-exec-2] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522162283155
+22:51:23.158 logback [http-nio-80-exec-2] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:51:23.158 logback [http-nio-80-exec-2] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522162283158
+22:51:23.161 logback [http-nio-80-exec-2] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:51:23.161 logback [http-nio-80-exec-2] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522162283161
+22:51:23.163 logback [http-nio-80-exec-2] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:51:50.782 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522162310782
+22:51:50.782 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:51:50.782 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522162310782
+22:51:50.782 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:51:50.782 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522162310782
+22:51:50.782 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:52:17.277 logback [http-nio-80-exec-7] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522162337277
+22:52:17.277 logback [http-nio-80-exec-7] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:52:17.277 logback [http-nio-80-exec-7] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522162337277
+22:52:17.277 logback [http-nio-80-exec-7] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:52:17.277 logback [http-nio-80-exec-7] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522162337277
+22:52:17.288 logback [http-nio-80-exec-7] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:55:20.905 logback [http-nio-80-exec-6] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522162520905
+22:55:20.907 logback [http-nio-80-exec-6] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:55:20.908 logback [http-nio-80-exec-6] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522162520908
+22:55:20.909 logback [http-nio-80-exec-6] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:55:20.910 logback [http-nio-80-exec-6] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522162520910
+22:55:20.912 logback [http-nio-80-exec-6] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:55:34.105 logback [http-nio-80-exec-10] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522162534105
+22:55:34.113 logback [http-nio-80-exec-10] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:55:34.113 logback [http-nio-80-exec-10] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522162534113
+22:55:34.115 logback [http-nio-80-exec-10] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:55:34.115 logback [http-nio-80-exec-10] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522162534115
+22:55:34.117 logback [http-nio-80-exec-10] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:56:00.951 logback [http-nio-80-exec-4] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522162560951
+22:56:00.954 logback [http-nio-80-exec-4] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:56:00.954 logback [http-nio-80-exec-4] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522162560954
+22:56:00.958 logback [http-nio-80-exec-4] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:56:00.958 logback [http-nio-80-exec-4] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522162560958
+22:56:00.960 logback [http-nio-80-exec-4] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0
+22:56:11.591 logback [http-nio-80-exec-9] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=1
+22:56:19.286 logback [http-nio-80-exec-7] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1521216000000, current time:1522162579286
+22:56:19.286 logback [http-nio-80-exec-7] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-17 00:00:00.0, maxCount=2,attendess count=2
+22:56:19.286 logback [http-nio-80-exec-7] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516896060000, current time:1522162579286
+22:56:19.295 logback [http-nio-80-exec-7] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-26 00:01:00.0, maxCount=10,attendess count=2
+22:56:19.295 logback [http-nio-80-exec-7] INFO  c.w.sing.service.CategoryServiceImpl - teset3 checking beginTime:1517155380000, current time:1522162579295
+22:56:19.296 logback [http-nio-80-exec-7] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=6,name=teset3, startTme=2018-01-29 00:03:00.0, maxCount=10,attendess count=0

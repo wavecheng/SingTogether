@@ -30,8 +30,8 @@ img{
     background-color: #53a4f4;
     width: 100%;
     height: 2px;
-    margin-bottom: 40px;
-    margin-top:30px;
+    margin-bottom: 20px;
+    margin-top:10px;
 }
 .matrix {
     overflow-x: auto;
@@ -116,7 +116,7 @@ h2 {
 }
 p
 {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 a {

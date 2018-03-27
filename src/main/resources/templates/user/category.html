@@ -3,16 +3,24 @@
     <head>
         <title>学唱团报名Admin</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="/css/main.css" th:href="@{/css/main.css}" />
+        
+        <link rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" />
+        <script src="/js/jquery.min.js" th:href="@{/js/jquery.min.js}" ></script>
+	    <script src="/js/bootstrap.min.js" th:href="@{/js/bootstrap.min.js}"></script>
     </head>
     <body> 
-    	<a href="/user/category/add" >Add</a> 
-		<table>
+    	<div class="container-fluid">
+    	<a class="btn btn-info" href="/user/category/add" style="marging:20px;">Add</a> 
+		<table class="table table-striped ">
 		  <thead>
 		    <tr>
 		      <th>Id</th>
-		      <th>Name</th>
-		      <th>StartTime</th>
+		      <th>名称</th>
+		      <th>报名开始日期</th>
+		      <th>最大人数</th>
+		      <th>显示？</th>
+		      <th>报名列表</th>
+		      <th></th>
 		      <th></th>
 		    </tr>
 		  </thead>
@@ -20,14 +28,28 @@
 		    <tr th:each="o: ${allCategories}">
 		      <td th:text="${o.id}">Oranges</td>
 		      <td><a th:href="@{/user/category/{id}/view(id=${o.id})}" th:text="${o.name}"></a></td>
-		      <td th:text="${o.beginTime}">0.99</td>
+		      <td th:text="${o.beginTime}"></td>
+		      <td th:text="${o.maxCount}"></td>
+		      <td th:text="${o.active}"></td>
 		      <td>
-		      <a th:href="@{/user/category/{id}/view(id=${o.id})}">Update</a>
-		      <a th:href="@{/user/category/{id}/delete(id=${o.id})}">Delete</a>
-		      <a th:href="@{/user/category/{id}/view_attendee(id=${o.id})}">Attendees</a>
+		      <a class="btn btn-success" th:href="@{/user/category/{id}/view_attendee(id=${o.id})}">报名列表</a>
+		      </td>
+		      <td>
+		      <a class="btn btn-primary" th:href="@{/user/category/{id}/view(id=${o.id})}">Update</a>
+		      </td><td>
+		      <a class="btn btn-warning delete" th:href="@{/user/category/{id}/delete(id=${o.id})}">Delete</a>
 		      </td>
 		    </tr>
 		  </tbody>
 		</table>
+		</div>
     </body>
+    <script>
+    	$(document).ready(function(){
+    		$(".delete").click(function(){
+    			return confirm('确认删除？');
+    		})	
+    	});
+    </script>
+    
 </html>
