@@ -39,7 +39,8 @@ public class CategoryServiceImpl {
 		log.debug("searching categoryId={},name={}, startTme={}, maxCount={},attendess count={}",
 				 category.getId(),category.getName(),
 				category.getBeginTime(),category.getMaxCount(),count);
-		return category.getMaxCount() - count ;
+		long result = category.getMaxCount() - count ;
+		return result > 0 ? result: 0;
 	}
 	
 	public List<CategoryBO> getCurrentChoice(){
