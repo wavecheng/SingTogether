@@ -77,6 +77,7 @@ public class CategoryServiceImpl {
 		attendee.setName(name);
 		attendee.setPhone(phone);
 		attendeRepository.save(attendee);
+		log.info("{} {} attend:{}" , name, phone,category.getName());
 		return true;
 	}
 	
