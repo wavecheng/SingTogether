@@ -580,3 +580,181 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 10:06:11.486 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-27 00:00:00.0, maxCount=3,attendess count=1
 10:06:11.486 logback [http-nio-80-exec-5] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516982400000, current time:1522202771486
 10:06:11.486 logback [http-nio-80-exec-5] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-27 00:00:00.0, maxCount=3,attendess count=10
+10:07:11.920 logback [main] INFO  com.wavecheng.sing.SingApplication - Starting SingApplication on W2K12R2-0SAI9E6 with PID 5228 (C:\Users\Administrator\Documents\h24_web_dev_wkspace\SingTogether\target\classes started by Administrator in C:\Users\Administrator\Documents\h24_web_dev_wkspace\SingTogether)
+10:07:11.920 logback [main] DEBUG com.wavecheng.sing.SingApplication - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+10:07:11.920 logback [main] INFO  com.wavecheng.sing.SingApplication - No active profile set, falling back to default profiles: default
+10:07:12.496 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@635ba0: startup date [Wed Mar 28 10:07:12 SGT 2018]; root of context hierarchy
+10:07:12.590 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+10:07:14.731 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d7233a12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:07:15.840 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+10:07:15.870 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:07:15.870 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+10:07:16.231 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:07:16.231 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3735 ms
+10:07:16.778 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:07:16.778 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:07:16.778 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:07:16.778 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:07:16.778 logback [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+10:07:16.778 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+10:07:17.936 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+10:07:17.973 logback [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+10:07:18.152 logback [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+10:07:18.156 logback [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+10:07:18.160 logback [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+10:07:18.264 logback [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10:07:18.587 logback [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10:07:19.686 logback [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+10:07:20.371 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:07:21.715 logback [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@132baa3, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c1ced9, org.springframework.security.web.header.HeaderWriterFilter@13bdd01, org.springframework.security.web.csrf.CsrfFilter@1441e56, org.springframework.security.web.authentication.logout.LogoutFilter@1bd85db, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@14e861f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1826398, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@159d601, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1df22f7, org.springframework.security.web.session.SessionManagementFilter@1216605, org.springframework.security.web.access.ExceptionTranslationFilter@1efbb12, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@489296]
+10:07:22.247 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@635ba0: startup date [Wed Mar 28 10:07:12 SGT 2018]; root of context hierarchy
+10:07:22.434 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[POST]}" onto public java.lang.String com.wavecheng.sing.web.SingController.index(java.lang.String,java.lang.String,int)
+10:07:22.434 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.index(org.springframework.ui.Model)
+10:07:22.434 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{id}/delete],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.deleteCategory(int) throws java.text.ParseException
+10:07:22.434 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.adminCategory(org.springframework.ui.Model)
+10:07:22.434 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{id}/view],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.viewCategory(int,org.springframework.ui.Model)
+10:07:22.434 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{categoryId}/attendee/{id}/delete],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.deleteAttendee(int,int)
+10:07:22.434 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{id}/update],methods=[POST]}" onto public java.lang.String com.wavecheng.sing.web.SingController.viewAttendee(int,java.lang.String,java.lang.String,boolean,int) throws java.text.ParseException
+10:07:22.434 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{id}/view_attendee],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.viewAttendee(int,org.springframework.ui.Model)
+10:07:22.434 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/add],methods=[POST]}" onto public java.lang.String com.wavecheng.sing.web.SingController.addCategory(java.lang.String,java.lang.String,boolean,int) throws java.text.ParseException
+10:07:22.434 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/add],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.addCategory()
+10:07:22.434 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.login()
+10:07:22.434 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:07:22.434 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:07:22.512 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:07:22.512 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:07:22.731 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:07:23.887 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:07:23.926 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+10:07:23.957 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+10:07:23.988 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:07:24.035 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+10:07:24.035 logback [main] INFO  com.wavecheng.sing.SingApplication - Started SingApplication in 13.037 seconds (JVM running for 14.051)
+10:08:28.028 logback [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10:08:28.028 logback [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+10:08:28.082 logback [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 54 ms
+10:08:28.230 logback [http-nio-80-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+10:08:28.574 logback [http-nio-80-exec-1] INFO  c.w.sing.service.CategoryServiceImpl - 女生低声部 checking beginTime:1522080000000, current time:1522202908574
+10:08:28.605 logback [http-nio-80-exec-1] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=3,name=女生低声部, startTme=2018-03-27 00:00:00.0, maxCount=3,attendess count=1
+10:08:28.605 logback [http-nio-80-exec-1] INFO  c.w.sing.service.CategoryServiceImpl - asdfadfm checking beginTime:1516982400000, current time:1522202908605
+10:08:28.605 logback [http-nio-80-exec-1] DEBUG c.w.sing.service.CategoryServiceImpl - searching categoryId=5,name=asdfadfm, startTme=2018-01-27 00:00:00.0, maxCount=3,attendess count=10
+10:08:28.652 logback [http-nio-80-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+10:08:28.746 logback [http-nio-80-exec-1] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+10:08:28.746 logback [http-nio-80-exec-1] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+10:08:28.746 logback [http-nio-80-exec-1] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+10:08:28.746 logback [http-nio-80-exec-1] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+10:08:28.761 logback [http-nio-80-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+10:08:28.761 logback [http-nio-80-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+10:37:58.654 logback [main] INFO  com.wavecheng.sing.SingApplication - Starting SingApplication on W2K12R2-0SAI9E6 with PID 5112 (C:\Users\Administrator\Documents\h24_web_dev_wkspace\SingTogether\target\classes started by Administrator in C:\Users\Administrator\Documents\h24_web_dev_wkspace\SingTogether)
+10:37:58.670 logback [main] DEBUG com.wavecheng.sing.SingApplication - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+10:37:58.670 logback [main] INFO  com.wavecheng.sing.SingApplication - No active profile set, falling back to default profiles: default
+10:37:58.951 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+10:37:59.076 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b1176b: startup date [Wed Mar 28 10:37:59 SGT 2018]; root of context hierarchy
+10:38:00.956 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$99c6dc15] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:38:01.763 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+10:38:01.778 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:38:01.778 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+10:38:02.060 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:38:02.060 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2984 ms
+10:38:02.467 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:38:02.467 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:38:02.467 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:38:02.467 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:38:02.467 logback [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+10:38:02.467 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+10:38:03.404 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+10:38:03.424 logback [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+10:38:03.533 logback [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+10:38:03.549 logback [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+10:38:03.549 logback [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+10:38:03.643 logback [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10:38:03.846 logback [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10:38:04.623 logback [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+10:38:05.216 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:38:06.466 logback [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@271a1, org.springframework.security.web.context.SecurityContextPersistenceFilter@e8ff8c, org.springframework.security.web.header.HeaderWriterFilter@ecbcb3, org.springframework.security.web.csrf.CsrfFilter@1957bf, org.springframework.security.web.authentication.logout.LogoutFilter@c0a23f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@9a0bea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10d6c76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5efcab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b9c411, org.springframework.security.web.session.SessionManagementFilter@166bab1, org.springframework.security.web.access.ExceptionTranslationFilter@1cab9d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14fdf0]
+10:38:06.994 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b1176b: startup date [Wed Mar 28 10:37:59 SGT 2018]; root of context hierarchy
+10:38:07.135 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[POST]}" onto public java.lang.String com.wavecheng.sing.web.SingController.index(java.lang.String,java.lang.String,int)
+10:38:07.135 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.index(org.springframework.ui.Model)
+10:38:07.135 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.login()
+10:38:07.135 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{id}/view_attendee],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.viewAttendee(int,org.springframework.ui.Model)
+10:38:07.135 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{id}/update],methods=[POST]}" onto public java.lang.String com.wavecheng.sing.web.SingController.viewAttendee(int,java.lang.String,java.lang.String,boolean,int) throws java.text.ParseException
+10:38:07.135 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{id}/view],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.viewCategory(int,org.springframework.ui.Model)
+10:38:07.135 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.adminCategory(org.springframework.ui.Model)
+10:38:07.135 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/add],methods=[POST]}" onto public java.lang.String com.wavecheng.sing.web.SingController.addCategory(java.lang.String,java.lang.String,boolean,int) throws java.text.ParseException
+10:38:07.135 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/add],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.addCategory()
+10:38:07.135 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{id}/delete],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.deleteCategory(int) throws java.text.ParseException
+10:38:07.135 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{categoryId}/attendee/{id}/delete],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.deleteAttendee(int,int)
+10:38:07.135 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:38:07.151 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:38:07.204 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:38:07.204 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:38:07.454 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:38:08.496 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:38:08.534 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+10:38:08.549 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+10:38:08.581 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:38:08.627 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+10:38:08.627 logback [main] INFO  com.wavecheng.sing.SingApplication - Started SingApplication in 10.614 seconds (JVM running for 12.002)
+10:38:30.356 logback [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+10:38:30.356 logback [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b1176b: startup date [Wed Mar 28 10:37:59 SGT 2018]; root of context hierarchy
+10:38:30.365 logback [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+10:38:30.371 logback [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:42:10.642 logback [main] INFO  c.w.sing.SingApplicationTests - Starting SingApplicationTests on W2K12R2-0SAI9E6 with PID 3984 (started by Administrator in C:\Users\Administrator\Documents\h24_web_dev_wkspace\SingTogether)
+10:42:10.642 logback [main] DEBUG c.w.sing.SingApplicationTests - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+10:42:10.642 logback [main] INFO  c.w.sing.SingApplicationTests - No active profile set, falling back to default profiles: default
+10:42:11.173 logback [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@76b1e9b8: startup date [Wed Mar 28 10:42:11 SGT 2018]; root of context hierarchy
+10:42:11.809 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+10:42:13.717 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$80331831] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:42:15.480 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+10:42:15.501 logback [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+10:42:15.673 logback [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+10:42:15.673 logback [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+10:42:15.673 logback [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+10:42:15.798 logback [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10:42:16.079 logback [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+10:42:17.481 logback [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+10:42:18.184 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:42:19.762 logback [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f642bf, org.springframework.security.web.context.SecurityContextPersistenceFilter@66a82a13, org.springframework.security.web.header.HeaderWriterFilter@1515f782, org.springframework.security.web.csrf.CsrfFilter@8077c97, org.springframework.security.web.authentication.logout.LogoutFilter@4ebd6fd6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5546e754, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11399548, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58164e9a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43e3a390, org.springframework.security.web.session.SessionManagementFilter@6eede35e, org.springframework.security.web.access.ExceptionTranslationFilter@394a6d2b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1d1bf7bf]
+10:42:20.861 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@76b1e9b8: startup date [Wed Mar 28 10:42:11 SGT 2018]; root of context hierarchy
+10:42:21.041 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[POST]}" onto public java.lang.String com.wavecheng.sing.web.SingController.index(java.lang.String,java.lang.String,int)
+10:42:21.056 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.index(org.springframework.ui.Model)
+10:42:21.056 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.login()
+10:42:21.056 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/add],methods=[POST]}" onto public java.lang.String com.wavecheng.sing.web.SingController.addCategory(java.lang.String,java.lang.String,boolean,int) throws java.text.ParseException
+10:42:21.056 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/add],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.addCategory()
+10:42:21.056 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{id}/delete],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.deleteCategory(int) throws java.text.ParseException
+10:42:21.056 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.adminCategory(org.springframework.ui.Model)
+10:42:21.056 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{id}/update],methods=[POST]}" onto public java.lang.String com.wavecheng.sing.web.SingController.viewAttendee(int,java.lang.String,java.lang.String,boolean,int) throws java.text.ParseException
+10:42:21.056 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{id}/view_attendee],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.viewAttendee(int,org.springframework.ui.Model)
+10:42:21.056 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{id}/view],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.viewCategory(int,org.springframework.ui.Model)
+10:42:21.056 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/category/{categoryId}/attendee/{id}/delete],methods=[GET]}" onto public java.lang.String com.wavecheng.sing.web.SingController.deleteAttendee(int,int)
+10:42:21.056 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:42:21.056 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:42:21.144 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:42:21.145 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:42:21.238 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:42:22.514 logback [main] INFO  c.w.sing.SingApplicationTests - Started SingApplicationTests in 12.984 seconds (JVM running for 14.776)
+10:42:22.663 logback [Thread-3] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@76b1e9b8: startup date [Wed Mar 28 10:42:11 SGT 2018]; root of context hierarchy
+10:42:22.678 logback [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
